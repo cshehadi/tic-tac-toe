@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+}
+
+.header {
+    border-bottom: thin solid #063e3e;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.board {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding: 2em;
+    background-color: white;
+    text-align: center;
+    color: #888;
+}
+
+.active {
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #eee;
+}
+
+[id$="-2"] {
+    border-left: 3px solid #666;
+    border-right: 3px solid #666;
+}
+
+[id^="cell-2"] {
+    border-top: 3px solid #666;
+    border-bottom: 3px solid #666;
+}
+
+ul.board {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+i.fa {
+    font-size: 9em;
+}
+
+.console {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.new-game {
+    text-align: center;
+    margin-bottom: 1em;
+    display: none;
+}
